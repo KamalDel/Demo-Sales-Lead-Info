@@ -27,16 +27,16 @@ stages:
   'Confirm':
     manualConfirmation: false
 
-#  Integration:
-#    credentials:
-#      - alias: 'mySystemAlias'
-#        credentialId: 'mySystemCredentialsId'
+  # 'Integration':
+  #   credentials:
+  #     - alias: 'mySystemAlias'
+  #       credentialId: 'mySystemCredentialsId'
 
-   Release:
-     cfTargets:
-       - org: 'e05d1370trial'
-         space: 'helloworld1'
-         apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
-         appName: 'Demo-Sales-Lead-Info'
-         manifest: 'manifest.yml'
-         credentialsId: 'cf-deploy'
+  'Release':
+    cfTargets:
+      - org: 'e05d1370trial'
+        space: 'helloworld1'
+        apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
+        appName: 'Demo-Sales-Lead-Info'
+        manifest: 'manifest.yml'
+        credentialsId: 'cf-deploy'
