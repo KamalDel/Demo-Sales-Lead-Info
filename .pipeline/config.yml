@@ -35,8 +35,8 @@ stages:
    Release:
      cfTargets:
        - org: 'e05d1370trial'
-         space: 'helloworld'
+         space: 'helloworld1'
          apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
          appName: 'Demo-Sales-Lead-Info'
          manifest: 'manifest.yml'
-         credentialsId: 'myDeploymentCredentialsId'
+         credentialsId: 'cf-deploy'
